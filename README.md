@@ -5,3 +5,6 @@ A preferred React environment.
 ###### Styled Components :nail_care:
 ###### ESLint  :pencil2:
 ###### Reusable Components :santa:
+
+ToDo:
+###### Incorporate more higher level components into the reusable batch.
