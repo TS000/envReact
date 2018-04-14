@@ -1,2 +1,2 @@
 # envReact
-My preferred React environment.
+A preferred React environment.
