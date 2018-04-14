@@ -33,6 +33,7 @@ const Wrap = styled.div`
 ReactDOM.render(
   <Wrap>
     <p>ツ</p>
+    <h4>yay</h4>
   </Wrap>,
   document.getElementById('app')
 )

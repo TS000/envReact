@@ -24,18 +24,14 @@ const CoolInput = styled.input`
 `
 
 export default class SubmitButton extends React.Component {
-
   render() {
     return (
-
       <CoolInput
         value={this.props.value}
         id={this.props.id}
         type={this.props.type}
         disabled={this.props.disabled}
       />
-
-    );
+    )
   }
 }
-

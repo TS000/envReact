@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const CoolButton = styled.button`
-	list-style: none
+  list-style: none
   text-transform: uppercase
   background-color: #fff
   border: none
@@ -16,22 +16,17 @@ const CoolButton = styled.button`
       border: none
     }
    &:active {
-   		box-shadow: inset 0 0 10px #000000
+      box-shadow: inset 0 0 10px #000000
    }
    &:focus {
-   	outline: none
+    outline: none
    }
 `
 
 export default class Button extends React.Component {
-
-
   render() {
     return (
-      <CoolButton onClick={this.props.onClick}>
-        {this.props.title}
-      </CoolButton>
-    );
+      <CoolButton onClick={this.props.onClick}>{this.props.title}</CoolButton>
+    )
   }
 }
-

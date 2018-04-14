@@ -23,24 +23,20 @@ class Loading extends React.Component {
     this.interval = window.setInterval(() => {
       this.state.text === stopper
         ? this.setState(() => ({ text: this.props.text }))
-        : this.setState((prevState) => ({ text: prevState.text + '.' }))
+        : this.setState(prevState => ({ text: prevState.text + '.' }))
     }, speed)
   }
   componentWillUnmount() {
     window.clearInterval(this.interval)
   }
   render() {
-    return (
-      <p style={styles.content}>
-        {this.state.text}
-      </p>
-    )
+    return <p style={styles.content}>{this.state.text}</p>
   }
 }
 
 Loading.propTypes = {
   text: PropTypes.string.isRequired,
-  speed: PropTypes.number.isRequired,
+  speed: PropTypes.number.isRequired
 }
 
 Loading.defaultProps = {
