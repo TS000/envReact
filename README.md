@@ -1,13 +1,13 @@
 # envReact
 A preferred React environment.
 
-#####Includes:
+##### Includes:
 * Webpack 4 + Babel
 * Styled Components :nail_care:
 * ESLint
 * Reusable Components
 
-#####Install:
+##### Install:
 * Clone this repo into a directory on your computer.
 * Move into the 'envReact' folder and run `npm -i`.
 * After the install finishes, run `npm start`.
@@ -15,5 +15,5 @@ A preferred React environment.
 * Look for the ツ
 
 
-#####ToDo:
+##### ToDo:
 * Incorporate more components into the reusable batch.
