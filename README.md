@@ -2,6 +2,7 @@
 A preferred React environment.
 
 ##### Includes:
+* React Router 4
 * Webpack 4 + Babel
 * Styled Components :nail_care:
 * ESLint
@@ -17,4 +18,3 @@ A preferred React environment.
 
 ##### ToDo:
 * Incorporate more components into the reusable batch.
-* Add React Router 4
