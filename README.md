@@ -1,5 +1,5 @@
 # envReact
-A preferred React environment.
+A React environment.
 
 ##### Includes:
 * React Router 4
