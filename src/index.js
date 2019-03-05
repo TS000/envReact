@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import styled, { injectGlobal } from 'styled-components'
+import styled, { createGlobalStyle } from 'styled-components'
 
-injectGlobal`
+const GlobalStyle = createGlobalStyle`
   body {
     height: 100%
     width: 100%
@@ -31,10 +31,13 @@ const Wrap = styled.div`
 `
 
 ReactDOM.render(
-  <Wrap>
-    <p>ツ</p>
-    <h4>yay</h4>
-  </Wrap>,
+  <React.Fragment>
+    <GlobalStyle />
+    <Wrap>
+      <p>ツ</p>
+      <h4>yay</h4>
+    </Wrap>
+  </React.Fragment>,
   document.getElementById('app')
 )
 
