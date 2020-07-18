@@ -4,9 +4,9 @@ import styled, { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
   body {
-    height: 100%
-    width: 100%
-    margin: 0
+    height: 100%;
+    width: 100%;
+    margin: 0;
     font-family: 
       -apple-system,
       BlinkMacSystemFont,
@@ -15,18 +15,18 @@ const GlobalStyle = createGlobalStyle`
       Ubuntu,
       Cantarell,
       Helvetica Neue,
-      sans-serif
+      sans-serif;
   }
 `
 
 const Wrap = styled.div`
-  display: flex
-  align-items: center
-  justify-content: center
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   >p {
-    font-size: 200px
-    color: black
+    font-size: 200px;
+    color: black;
   }
 `
 
