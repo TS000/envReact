@@ -3,9 +3,10 @@ A none CRA, React environment.
 
 ##### Includes:
 * React Router 4
-* Webpack 4 + Babel
+* Webpack 4 + Babel 7
 * Styled Components :nail_care:
 * ESLint
+* Jest
 * Reusable Components
 
 ##### Install:
