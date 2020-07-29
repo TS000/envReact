@@ -1,7 +1,10 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import styled, { createGlobalStyle } from 'styled-components'
+import Carousel from './components/reusable/Carousel'
+import slideData, { slides1, slides2 } from './data/slideData'
 
+const unWrappedData = slideData
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -24,12 +27,18 @@ const Wrap = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0 auto;
+  width: 50%;
+  flex-wrap: wrap;
 
   >p {
     font-size: 200px;
     color: black;
   }
 `
+
+const size2 = 250
+
 export default class App extends Component {
   render() {
     return (
@@ -38,6 +47,7 @@ export default class App extends Component {
         <Wrap>
           <p>ツ</p>
           <h4>yay</h4>
+          {/* <Carousel slides={unWrappedData} speed={false} size={size2} multi={true}/> */}
         </Wrap>
       </div>
     )
