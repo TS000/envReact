@@ -1,5 +1,5 @@
 # envReact
-A React environment.
+A none CRA, React environment.
 
 ##### Includes:
 * React Router 4
