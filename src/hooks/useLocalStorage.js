@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 
 const getStateFromLocalStorage = (defaultValue, key) => {
   const storage = localStorage.getItem(key)
