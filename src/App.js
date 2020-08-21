@@ -1,17 +1,18 @@
-import React, { Component } from 'react'
-import ReactDOM from 'react-dom'
-import styled, { createGlobalStyle } from 'styled-components'
-import Carousel from './components/reusable/Carousel'
-import slideData, { slides1, slides2 } from './data/slideData'
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+import styled, { createGlobalStyle } from 'styled-components';
+import Carousel from '@/components/reusable/Carousel';
+import slideData, { slides1, slides2 } from './data/slideData';
+import Button from '@/components/reusable/Button';
 
-const unWrappedData = slideData
+const unWrappedData = slideData;
 
 const GlobalStyle = createGlobalStyle`
   body {
     height: 100%;
     width: 100%;
     margin: 0;
-    font-family: 
+    font-family:
       -apple-system,
       BlinkMacSystemFont,
       Segoe UI,Roboto,
@@ -21,7 +22,7 @@ const GlobalStyle = createGlobalStyle`
       Helvetica Neue,
       sans-serif;
   }
-`
+`;
 
 const Wrap = styled.div`
   display: flex;
@@ -31,13 +32,13 @@ const Wrap = styled.div`
   width: 50%;
   flex-wrap: wrap;
 
-  >p {
+  > p {
     font-size: 200px;
     color: black;
   }
-`
+`;
 
-const size2 = 250
+const size2 = 250;
 
 export default class App extends Component {
   render() {
@@ -47,9 +48,15 @@ export default class App extends Component {
         <Wrap>
           <p>ツ</p>
           <h4>yay</h4>
-          <Carousel slides={unWrappedData} speed={false} size={size2} multi={true}/>
+          <Button title="button" />
+          <Carousel
+            slides={unWrappedData}
+            speed={false}
+            size={size2}
+            multi={true}
+          />
         </Wrap>
       </div>
-    )
+    );
   }
 }
