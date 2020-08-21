@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import styled, { createGlobalStyle } from 'styled-components';
-import Carousel from '@/components/reusable/Carousel';
-import slideData, { slides1, slides2 } from './data/slideData';
-import Button from '@/components/reusable/Button';
+import React, { Component } from 'react'
+import ReactDOM from 'react-dom'
+import styled, { createGlobalStyle } from 'styled-components'
+import Carousel from '@/components/reusable/Carousel'
+import slideData, { slides1, slides2 } from './data/slideData'
+import Button from '@/components/reusable/Button'
 
-const unWrappedData = slideData;
+const unWrappedData = slideData
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -22,7 +22,7 @@ const GlobalStyle = createGlobalStyle`
       Helvetica Neue,
       sans-serif;
   }
-`;
+`
 
 const Wrap = styled.div`
   display: flex;
@@ -36,9 +36,9 @@ const Wrap = styled.div`
     font-size: 200px;
     color: black;
   }
-`;
+`
 
-const size2 = 250;
+const size2 = 250
 
 export default class App extends Component {
   render() {
@@ -57,6 +57,6 @@ export default class App extends Component {
           />
         </Wrap>
       </div>
-    );
+    )
   }
 }

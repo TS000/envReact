@@ -4,21 +4,21 @@ import useIncrementor from '../../hooks/useIncrementor.js'
 
 // logic to decide how big to make the carousel and slides
 const CarouselWrapper = styled.div`
-    color: #eee;
-    height: ${(props) => props.size}px;
-    width: ${(props) => parseFloat(props.multi ? props.size * 4 : props.size)}px;
-    background-color: #ccc;
-    margin: 0 auto;
-    position: relative;
-    overflow: hidden;
-    margin-top: 40px;
+  color: #eee;
+  height: ${(props) => props.size}px;
+  width: ${(props) => parseFloat(props.multi ? props.size * 4 : props.size)}px;
+  background-color: #ccc;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  margin-top: 40px;
 `
 
 const SlideContainer = styled.div`
-    position: absolute;
-    transition: transform 350ms;
-    height: 100%;
-    display: flex;
+  position: absolute;
+  transition: transform 350ms;
+  height: 100%;
+  display: flex;
 `
 const Slide = styled.div`
     width: ${(props) => props.size}px;
@@ -32,36 +32,36 @@ const Slide = styled.div`
     background-size: contain;
 `
 const NavArrows = styled.div`
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    padding: ${(props) => (props.multi ? '10px' : '30px')};
-    box-sizing: border-box;
-    border-top: ${(props) => (props.multi ? '5px' : '20px')} solid white;
-    border-right: ${(props) => (props.multi ? '5px' : '20px')} solid black;
-    cursor: pointer;
-    margin: 0 10px;
-    display: none;
-    transition: 6s;
-    top: 0;
-    bottom: 0;
-    margin: auto 0;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  padding: ${(props) => (props.multi ? '10px' : '30px')};
+  box-sizing: border-box;
+  border-top: ${(props) => (props.multi ? '5px' : '20px')} solid white;
+  border-right: ${(props) => (props.multi ? '5px' : '20px')} solid black;
+  cursor: pointer;
+  margin: 0 10px;
+  display: none;
+  transition: 6s;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
 
-    ${CarouselWrapper}:hover & {
-      display: block;
-    }
+  ${CarouselWrapper}:hover & {
+    display: block;
+  }
 `
 
 const NavArrowLeft = styled(NavArrows)`
-    transform: rotate(-135deg);
-    left: 20px;
-    z-index: 2;
+  transform: rotate(-135deg);
+  left: 20px;
+  z-index: 2;
 `
 
 const NavArrowRight = styled(NavArrows)`
-    transform: rotate(45deg);
-    right: 20px;
-    z-index: 2;
+  transform: rotate(45deg);
+  right: 20px;
+  z-index: 2;
 `
 
 const Carousel = ({ slides, speed, size, multi }) => {
@@ -76,7 +76,7 @@ const Carousel = ({ slides, speed, size, multi }) => {
     total: totalSlides,
     enabled: auto,
     speed: speedTime,
-    multi: multi
+    multi: multi,
   })
 
   useEffect(() => {
@@ -135,7 +135,7 @@ const Carousel = ({ slides, speed, size, multi }) => {
       onMouseLeave={() => setAuto(true)}
     >
       <NavArrowLeft
-        aria-label='previous slide'
+        aria-label="previous slide"
         multi={multi}
         onClick={() => {
           move(-1)
@@ -144,7 +144,7 @@ const Carousel = ({ slides, speed, size, multi }) => {
 
       <SlideContainer
         style={{
-          transform: `translate3d(-${moveSlide * size}px,0,0)`
+          transform: `translate3d(-${moveSlide * size}px,0,0)`,
         }}
       >
         {slides.map((slide) => (
@@ -152,7 +152,7 @@ const Carousel = ({ slides, speed, size, multi }) => {
         ))}
       </SlideContainer>
       <NavArrowRight
-        aria-label='next slide'
+        aria-label="next slide"
         multi={multi}
         onClick={() => {
           move(1)

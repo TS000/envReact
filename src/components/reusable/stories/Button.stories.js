@@ -1,15 +1,15 @@
-import React from 'react';
+import React from 'react'
 
-import Button from '@/components/reusable/Button';
+import Button from '@/components/reusable/Button'
 
 export default {
   title: 'Button',
   component: Button,
-};
+}
 
-const Template = (args) => <Button {...args} />;
+const Template = (args) => <Button {...args} />
 
-export const Primary = Template.bind({});
+export const Primary = Template.bind({})
 Primary.args = {
   title: 'Button',
-};
+}

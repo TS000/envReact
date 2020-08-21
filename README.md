@@ -10,10 +10,15 @@ A none CRA, React environment.
 
 ##### Install:
 * Clone this repo into a directory on your computer.
-* Move into the 'envReact' folder and run `npm -i`.
-* After the install finishes, run `npm start`.
+* Move into the 'envReact' folder and run `npm -i` or `yarn`.
+
+#### Development
+* After the install finishes, run `npm start` or `yarn start`.
 * Check `localhost:8080` in your browser.
 * Look for the ツ
+
+#### Storybook
+* run `npm run storybook` or `yarn storybook`
 
 
 ##### ToDo:
