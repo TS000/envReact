@@ -9,7 +9,10 @@ module.exports = {
       }
     ]
   },
-  stats: { assets: false, modules: false },
+  stats: {
+    assets: false,
+    modules: false
+  },
   resolve: {
     extensions: ['*', '.js', '.jsx']
   },
