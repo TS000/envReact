@@ -47,7 +47,7 @@ export default class App extends Component {
         <Wrap>
           <p>ツ</p>
           <h4>yay</h4>
-          {/* <Carousel slides={unWrappedData} speed={false} size={size2} multi={true}/> */}
+          <Carousel slides={unWrappedData} speed={false} size={size2} multi={true}/>
         </Wrap>
       </div>
     )
