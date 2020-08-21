@@ -6,8 +6,6 @@ const AddButton = styled.button `
     border: 2px #7D8A2E solid;
     color: #7D8A2E;
     border-radius: 64px;
-    height: 30px;
-    width: 30px;
     font-weight: 700;
     cursor: pointer;
     float: right;
