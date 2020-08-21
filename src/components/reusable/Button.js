@@ -15,7 +15,6 @@ const AddButton = styled.button `
     transition-duration: 0.3s;
     transition-property: transform;
         &:hover {
-            -webkit-transform: scale(1.1);
             transform: scale(1.1);
         }
 `

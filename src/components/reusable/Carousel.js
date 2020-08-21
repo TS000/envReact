@@ -40,14 +40,13 @@ const NavArrows = styled.div`
     border-top: ${(props) => (props.multi ? '5px' : '20px')} solid white;
     border-right: ${(props) => (props.multi ? '5px' : '20px')} solid black;
     cursor: pointer;
-    margin: 0 10px;
     display: none;
     transition: 6s;
     top: 0;
     bottom: 0;
     margin: auto 0;
 
-    ${CarouselWrapper}:hover & {
+    ${ /* sc-selector */ CarouselWrapper}:hover & {
       display: block;
     }
 `
