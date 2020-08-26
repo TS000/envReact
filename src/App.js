@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import ReactDOM from 'react-dom'
 import styled, { createGlobalStyle } from 'styled-components'
 import Carousel from './components/reusable/Carousel'
+import Button from './components/reusable/Button'
 import slideData, { slides1, slides2 } from './data/slideData'
 
 const unWrappedData = slideData
@@ -47,6 +47,7 @@ export default class App extends Component {
         <Wrap>
           <p>ツ</p>
           <h4>yay</h4>
+          <Button height='40px' width='100px' title='Yo Adam what up!' />
           <Carousel slides={unWrappedData} speed={false} size={size2} multi={true}/>
         </Wrap>
       </div>
