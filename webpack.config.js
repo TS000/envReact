@@ -10,6 +10,10 @@ module.exports = {
       },
     ],
   },
+  stats: {
+    assets: false,
+    modules: false
+  },
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "src"),
