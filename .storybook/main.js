@@ -4,6 +4,8 @@ module.exports = {
     '@storybook/addon-links',
     '@storybook/addon-essentials',
     '@storybook/addon-actions',
+    '@storybook/addon-contexts/register',
+    '@storybook/addon-backgrounds/register',
     {
       name: '@storybook/addon-docs',
       options: {
