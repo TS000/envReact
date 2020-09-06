@@ -1,5 +1,5 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 
 const AddButton = styled.button `
     height: ${(props) => props.height};
@@ -21,3 +21,4 @@ const AddButton = styled.button `
 
 export default ({ handleClick, title, height, width }) =>
   <AddButton height={height} width={width} onClick={handleClick}> {title} </AddButton>
+

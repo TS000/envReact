@@ -6,6 +6,8 @@
   "scripts": {
     "start": "webpack-dev-server --config ./webpack.config.js --mode development",
     "test": "jest",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
     "lint:css":"stylelint './src/**/*.js'"
   },
   "repository": {
@@ -23,6 +25,10 @@
     "@babel/core": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
+    "@storybook/addon-actions": "^6.0.16",
+    "@storybook/addon-essentials": "^6.0.16",
+    "@storybook/addon-links": "^6.0.16",
+    "@storybook/react": "^6.0.16",
     "atob": "^2.1.2",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^9.0.0",
@@ -41,6 +47,7 @@
     "minimist": "^1.2.5",
     "randomatic": ">=3.0.0",
     "react-dev-utils": "^10.2.1",
+    "react-is": "^16.13.1",
     "react-router-dom": "^4.3.1",
     "react-test-renderer": "^16.13.1",
     "serve": "^11.3.2",

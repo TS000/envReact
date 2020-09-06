@@ -11,7 +11,7 @@ const GlobalStyle = createGlobalStyle`
     height: 100%;
     width: 100%;
     margin: 0;
-    font-family: 
+    font-family:
       -apple-system,
       BlinkMacSystemFont,
       Segoe UI,Roboto,
@@ -31,7 +31,7 @@ const Wrap = styled.div`
   width: 50%;
   flex-wrap: wrap;
 
-  >p {
+  > p {
     font-size: 200px;
     color: black;
   }
