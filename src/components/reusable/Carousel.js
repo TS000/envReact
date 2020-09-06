@@ -32,23 +32,23 @@ const Slide = styled.div`
     background-size: contain;
 `
 const NavArrows = styled.div`
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    padding: ${(props) => (props.multi ? '10px' : '30px')};
-    box-sizing: border-box;
-    border-top: ${(props) => (props.multi ? '5px' : '20px')} solid white;
-    border-right: ${(props) => (props.multi ? '5px' : '20px')} solid black;
-    cursor: pointer;
-    display: none;
-    transition: 6s;
-    top: 0;
-    bottom: 0;
-    margin: auto 0;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  padding: ${(props) => (props.multi ? '10px' : '30px')};
+  box-sizing: border-box;
+  border-top: ${(props) => (props.multi ? '5px' : '20px')} solid white;
+  border-right: ${(props) => (props.multi ? '5px' : '20px')} solid black;
+  cursor: pointer;
+  display: none;
+  transition: 6s;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
 
-    ${ /* sc-selector */ CarouselWrapper}:hover & {
-      display: block;
-    }
+  ${/* sc-selector */ CarouselWrapper}:hover & {
+    display: block;
+  }
 `
 
 const NavArrowLeft = styled(NavArrows)`
@@ -75,7 +75,7 @@ const Carousel = ({ slides, speed, size, multi }) => {
     total: totalSlides,
     enabled: auto,
     speed: speedTime,
-    multi: multi,
+    multi: multi
   })
 
   useEffect(() => {
@@ -143,7 +143,7 @@ const Carousel = ({ slides, speed, size, multi }) => {
 
       <SlideContainer
         style={{
-          transform: `translate3d(-${moveSlide * size}px,0,0)`,
+          transform: `translate3d(-${moveSlide * size}px,0,0)`
         }}
       >
         {slides.map((slide) => (
