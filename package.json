@@ -7,8 +7,8 @@
     "start": "webpack-dev-server --config ./webpack.config.js --mode development",
     "test": "jest",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
-    "lint:css":"stylelint './src/**/*.js'"
+    "build-storybook": "build-storybook",
+    "lint:css": "stylelint './src/**/*.js'"
   },
   "repository": {
     "type": "git",
@@ -25,7 +25,8 @@
     "@babel/core": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
-    "@storybook/addon-actions": "^6.0.16",
+    "@storybook/addon-actions": "^6.0.21",
+    "@storybook/addon-docs": "^6.0.21",
     "@storybook/addon-essentials": "^6.0.16",
     "@storybook/addon-links": "^6.0.16",
     "@storybook/react": "^6.0.16",
