@@ -7,15 +7,13 @@ const AddButton = styled.button`
   background: ${(props) => props.color};
   border: ${(props) => props.border} 2px solid;
   color: ${(props) => props.font};
-  border-radius: 64px;
+  border-radius: 5px;
   font-weight: 700;
   cursor: pointer;
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  transition-duration: 0.3s;
-  transition-property: transform;
+  transition: all 0.1s;
   &:hover {
-    transform: scale(1.1);
+    background: ${(props) => props.font};
+    color: ${(props) => props.color};
   }
 `
 
