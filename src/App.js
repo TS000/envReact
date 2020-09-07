@@ -32,12 +32,10 @@ const Wrap = styled.div`
   flex-wrap: wrap;
 
   > p {
-    font-size: 200px;
+    font-size: 100px;
     color: black;
   }
 `
-
-const size2 = 250
 
 export default class App extends Component {
   render() {
@@ -47,8 +45,12 @@ export default class App extends Component {
         <Wrap>
           <p>ツ</p>
           <h4>yay</h4>
-          <Button height='40px' width='100px' title='Yo Adam what up!' />
-          <Carousel slides={unWrappedData} speed={false} size={size2} multi={true}/>
+          <Carousel
+            slides={unWrappedData}
+            speed={false}
+            size={450}
+            multi={false}
+          />
         </Wrap>
       </div>
     )
