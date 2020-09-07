@@ -1,5 +1,5 @@
 import { ThemeProvider } from 'styled-components'
-import { defaultTheme, darkTheme } from '../src/utils'
+import { defaultTheme, darkTheme } from '../src/utils/themes'
 
 export const contexts = [
   {
